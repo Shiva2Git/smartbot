@@ -59,8 +59,8 @@ def get_conversation_chain(vectorstore):
 
 
 def get_vectorstore(text_chunks):
-       
-       embeddings=OpenAIEmbeddings()
+       key=st.secrets["OPENAI_APIKEY"]
+       embeddings = OpenAIEmbeddings(openai_api_key=key)
        vectorstore=FAISS.from_texts(texts=text_chunks,embedding=embeddings)
        return vectorstore
 
