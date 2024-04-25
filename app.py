@@ -113,7 +113,6 @@ def handle_userinput(user_questions):
     
 
 def main():
-    load_dotenv()
     st.set_page_config(page_title='smart Chatbot based on your documents',page_icon='https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/48/Files-icon.png',layout='wide')
     st.write(css, unsafe_allow_html=True)
     st.header("Chat With Your Documents:book:")
