@@ -97,9 +97,22 @@ def get_text_web(web_link):
     else:
          print("Failed to fetch the web page")
 
+def mock_conversation_handler(input_data):
+    # Placeholder implementation, replace with your actual logic
+    response = {'chat_history': [{'content': 'Hello!'}, {'content': 'How can I help you?'}]}
+    return response
+
+def initialize_conversation():
+    # Initialize the conversation handler in session state
+    st.session_state.conversation = mock_conversation_handler
+        
 
 
 def handle_userinput(user_questions):
+    if 'conversation' not in st.session_state:
+        # Initialize conversation handler if not already initialized
+       return  initialize_conversation()
+    
     response = st.session_state.conversation({'question': user_questions})
     st.session_state.chat_history = response['chat_history']
 
