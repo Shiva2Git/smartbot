@@ -111,7 +111,7 @@ def initialize_conversation():
 def handle_userinput(user_questions):
     if 'conversation' not in st.session_state:
         # Initialize conversation handler if not already initialized
-       return  initialize_conversation()
+       initialize_conversation()
     
     response = st.session_state.conversation({'question': user_questions})
     st.session_state.chat_history = response['chat_history']
