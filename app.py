@@ -1,7 +1,6 @@
 import streamlit as st
 import moviepy.editor as mp 
 import speech_recognition as sr 
-from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 import requests
 from bs4 import BeautifulSoup
@@ -124,7 +123,7 @@ def handle_userinput(user_questions):
     
 
 def main():
-    openai_api_key = st.secrets["OPENAI_APIKEY"]
+   
     st.set_page_config(page_title='smart Chatbot based on your documents',page_icon='https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/48/Files-icon.png',layout='wide')
     st.write(css, unsafe_allow_html=True)
     st.header("Chat With Your Documents:book:")
