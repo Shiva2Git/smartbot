@@ -37,7 +37,7 @@ bot_template = '''
 user_template ='''
 <div class="chat-message user">
     <div class="avatar">
-      <img src="8b167af653c2399dd93b952a48740620.jpg">
+      <img src="https://images.app.goo.gl/i62tK666GVznBAM78">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
