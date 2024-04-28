@@ -37,7 +37,7 @@ bot_template = '''
 user_template ='''
 <div class="chat-message user">
     <div class="avatar">
-      <img src="https://images.app.goo.gl/i62tK666GVznBAM78">
+      <img src="https://drive.google.com/file/d/17rb9X26xd_MZX2HFiyjwkP3TpLvXCnTP/view?usp=drivesdk.jpg" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
